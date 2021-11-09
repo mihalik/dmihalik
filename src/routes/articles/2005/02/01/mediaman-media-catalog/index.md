@@ -1,9 +1,9 @@
 ---
-title: "MediaMan media catalog"
-date: "2005-02-01"
+title: 'MediaMan media catalog'
+date: '2005-02-01'
 ---
 
-![mediaman-screenshot-2-l.jpg](images/mediaman-screenshot-2-l.jpg)There's a [pretty good program for MCE](http://www.binnerup.dk/mce/mymovies.htm) for keeping a catalog of your DVD's, but I was looking for something I could run on my laptop and easily see what DVD's we had. And, most importantly, I wanted to be able to print out a complete list of our DVD's I could keep in the car that I can consult when I happen to be at a store with a cheap movie. So I a couple really bad programs but then I came across MediaMan. It does exactly what I want and does it very well. And best of all, it's free.
+![mediaman-screenshot-2-l.jpg](/images/mediaman-screenshot-2-l.jpg)There's a [pretty good program for MCE](http://www.binnerup.dk/mce/mymovies.htm) for keeping a catalog of your DVD's, but I was looking for something I could run on my laptop and easily see what DVD's we had. And, most importantly, I wanted to be able to print out a complete list of our DVD's I could keep in the car that I can consult when I happen to be at a store with a cheap movie. So I a couple really bad programs but then I came across MediaMan. It does exactly what I want and does it very well. And best of all, it's free.
 
 It's very easy to add DVD's to your collection using MediaMan. You just put in the title and it uses Amazon's web services to let you select the exact movie you have (or multiple disks if you have multiple ones in a series) and then it downloads the album art and all the information about the movie into your collection. In version 2 you can even hook up a webcam and use it to can UPC codes for a quick import of a very large DVD (or book, games, cd's) library.
 

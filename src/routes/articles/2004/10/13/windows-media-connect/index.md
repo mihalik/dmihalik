@@ -16,5 +16,3 @@ The DVD player found Media Connect just fine. And lists it's standard â€œMus
 Movies, are another story. Most of my movies did not work. The D2730 is only able to play MPEG movies. The D5 software transcodes all the other formats into MPEG to play. From reading [a document](http://www.microsoft.com/whdc/device/netAttach/WMconnect.mspx) Steve pointed to, it looks like the software can transcode video. I was hoping the the DVD player would tell Media Connect that it needs to transcode the movies. No such luck.The property window for â€œDevice1â€œ is empty. Next I need to dig into the configuration files for Media Connect devices to see if there's any way to set it by hand.
 
 So, if you are only interested in playing music and looking at pictures, Media Connect is a great alternative to the D5 software. I'm gonna play with it a little more over the next few days to see if I can get the video transcoding working correctly.
-
-[](file://192.168.1.110/download)

@@ -38,7 +38,7 @@ Launch WinSCP3.exe to configure your session. Want to set the following informat
 - User name: username
 - Private key file: location of your key
 
-![winscp.jpg](/images/winscp.jpg)
+![winscp1.jpg](/images/winscp1.jpg)
 
 Then hit "Save" and give the session a name like "Strongspace".
 
