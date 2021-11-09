@@ -2,7 +2,8 @@
 	const posts = import.meta.glob('./articles/**/*.md');
 	let body = [];
 	for (const path in posts) {
-		const urlPath = path.replace('index.md', '');
+		let urlPath = path.replace('index.md', '');
+		urlPath = urlPath.replace('./articles', '/articles');
 		body.push(posts[path]().then(({ metadata }) => ({ ...metadata, path: urlPath })));
 	}
 	body.reverse();
