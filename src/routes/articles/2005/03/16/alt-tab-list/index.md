@@ -1,0 +1,16 @@
+---
+title: "Alt-Tab List"
+date: "2005-03-16"
+---
+
+Here's the application I mentioned in my [previous post](http://dmihalik.com/PermaLink,guid,e2d81579-ddac-45e6-8023-2fb4f3b71df0.aspx). I'm pretty happy with it's current state so I'm gonna put a copy up for others to try if they are interested. Right now I think it's a pretty good replacement for Alt-Tab, and I've got some ideas for future expansion.
+
+It's got two "modes" of operation:
+
+Standard - If you hold down alt and keep hitting tab it works just like the Windows Alt-Tab (and it also supports Alt-Shift-Tab).
+
+Enhanced (or some other cool name) - If you just hit alt-tab once the window stays up and lets you select with the arrow keys or mouse. This gives you a chance to take a bit longer to decide where you are going without being forced to hold down Alt. Also, you can hit "x" to close any application while in this mode.
+
+That's about it. Read the Readme file to figure out how to "install" it.
+
+[alttablist.zip](http://dmihalik.com/wp-content/uploads/2008/01/alttablist.zip "alttablist.zip")

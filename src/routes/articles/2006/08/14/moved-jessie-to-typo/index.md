@@ -1,0 +1,12 @@
+---
+title: "Moved Jessie to Typo"
+date: "2006-08-14"
+---
+
+We spent a while this weekend moving [Jessie's blog](http://www.jessiemihalik.com) from dasBlog to Typo on [Textdrive](http://www.textdrive.com). This gets the last thing off the server in our pantry (formerly the server in the bathroom). She's still messing with the tweaking the theme but it's looking pretty good.
+
+For those interested in redirecting using the Typo redirects table should check out [this diff](http://www.typosphere.org/trac/attachment/ticket/854/redirect_with_array_fix.diff) to make sure the redirects are working correctly. I went a little further and added a default page rather than the standard "Page not found" text. Here's what I added to Jessie's redirect controller.
+
+from = params\[:from\].join("/") if params\[:from\].kind\_of?(Array) r = Redirect.find\_by\_from\_path(from) r = Redirect.find\_by\_from\_path("\*") if !r
+
+And then I added one of her standard pages for the \* (default) redirect.

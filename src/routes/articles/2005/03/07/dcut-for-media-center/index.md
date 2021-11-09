@@ -1,0 +1,8 @@
+---
+title: "dCut for Media Center"
+date: "2005-03-07"
+---
+
+I don't use my Media Center for recording TV. I still use my ReplayTV for TV and the Media Center is just for watching other movies and listening to music. One of the main reasons I use the ReplayTV is the fact that it recognizes commercials and allows you to skip them (our old Replay died so we no longer have auto commercial skip). I saw some information about the new version of [dCut](http://www.inseattle.org/%7Edan/Dcut.htm) and I'm thinking it's getting closer to what I want. dCut allows you to edit and compress recorded shows. The new interface and new features [look good](http://msmvps.com/chrisl/archive/2005/03/01/37335.aspx) but you still have to cut commercials by hand. But it looks great for archiving.
+
+Though I'm not sure how well it would work, I'd like to see is some sort of P2P commercial cutting application. As I watch a show I could mark commercials and then other people in my area could download a small file that contained commercial locations and could automatically skip them on their recorded version of the show. But maybe that would be stealing TV...

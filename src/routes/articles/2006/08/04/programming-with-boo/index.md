@@ -1,0 +1,8 @@
+---
+title: "Programming with Boo"
+date: "2006-08-04"
+---
+
+I've spent a few nights playing with a new (to me) programming language, [Boo](http://boo.codehaus.org). It really feels like the best of C#, Ruby, and Python. If you are interested in writing for the CLI or you are generally interested in programming languages, check out the [features page](http://boo.codehaus.org/Language+Features) to check out some of the reasons why I've been impressed.
+
+If you are interested in trying it out, be sure and grab the new version of [SharpDevelop](http://sharpdevelop.com/OpenSource/SD/Default.aspx). It's got built-in support for Boo projects (including Windows Forms editing).

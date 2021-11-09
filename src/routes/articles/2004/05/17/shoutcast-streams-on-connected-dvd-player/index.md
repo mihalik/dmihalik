@@ -1,0 +1,16 @@
+---
+title: "Shoutcast streams on connected DVD player"
+date: "2004-05-17"
+---
+
+With the [V3 of the firmware](http://dmihalik.com/PermaLink.aspx?guid=4cfecd1e-9f80-48c1-a3a3-db02969ff291) for the D5 DVD players (GoVideo D2730, Gateway Connected DVD player, or a few others), they added the ability to stream from UPnP media servers. They did this to support Musicmatch, Rhapsody, and others. The benefit from this is that you can now configure your own UPnP media server and avoid the D5 software all together.
+
+I donâ€™t mind the D5 software for the most part, so I don't want to completely replace it. Especially now that I've [hacked it](http://dmihalik.com/PermaLink.aspx?guid=6df065ac-d09f-43ac-a8a4-26226fa210ac) to allow for playing files off of shared network drives. The only thing I can't get it to play are shoutcast streams. So, I set off to find out how to get this working, and it turned out to be really easy.
+
+First, download the [TwonkyVision Standalone Media Server](http://www.twonkyvision.com/UPnP/). I know, it's a stupid name but it works. Scroll down to the very bottom of the page to download the zip file. There's also a Winamp plugin that will load the server when Winamp runs and will share your media in your Winamp Media Library. It's another option, but I like running the standalone server as a service.
+
+Unzip MediaServer.exe to a directory and the radio.m3u file. Use Winamp to add any Shoutcast streams you want to the radio.m3u file. Add a cmd prompt, type MediaServer.exe -install to install the server as a Windows Service.
+
+That's it. Go to your DVD player and search for servers. You should have your original D5 server and your new TwonkyVision server. Select a stream from your playlist and enjoy streaming music for free!
+
+Update: Running the server as a Windows Service is somewhat unreliable for me. Sometimes it can find the media it's supposed to serve and sometimes it does not. It's pretty reliable if you just run it by hand.
