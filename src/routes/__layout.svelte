@@ -3,15 +3,16 @@
 	import { page } from '$app/stores';
 </script>
 
-<header class="flex justify-end">
-	<a href="/">
-		<h1 class="leading-relaxed inline font-sans text-3xl">Dustin Mihalik</h1>
-	</a>
-	<img
-		alt="dmihalik avatar"
-		class="ml-4 inline object-cover w-12 h-12 rounded-full"
-		src="/images/avatar.png"
-	/>
+<header class="flex justify-between mt-2">
+	{#if $page.path !== '/'}
+		<a href="/">
+			<img
+				alt="dmihalik avatar"
+				class="ml-4 inline object-cover w-12 h-12 rounded-full"
+				src="/images/avatar.png"
+			/>
+		</a>
+	{/if}
 </header>
 
 <main class="font-sans mt-8">

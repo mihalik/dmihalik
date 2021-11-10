@@ -4,8 +4,6 @@ date: '2006-01-14'
 type: 'page'
 ---
 
-![avatar.png](/images/avatar.png)
-
 I am a software engineer at [Indeed](http://indeed.com) in Austin, TX. This blog is a place for me to write about whatever I feel like. This might include:
 
 - .NET programming
