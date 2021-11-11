@@ -2,7 +2,7 @@
 	<title>dmihalik.com</title>
 </svelte:head>
 
-<div class="flex flex-row prose prose:xl">
+<div class="flex flex-row">
 	<div>
 		<h2>Hi, I'm Dustin Mihalik</h2>
 		<p>

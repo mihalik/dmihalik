@@ -22,6 +22,10 @@
 	export let postList;
 </script>
 
+<svelte:head>
+	<title>dmihalik.com - Archive</title>
+</svelte:head>
+
 <div class="">
 	<h1 class="break-normal pt-6 pb-2 text-3xl md:text-4xl">Archived blog posts</h1>
 
