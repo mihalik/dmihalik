@@ -21,9 +21,9 @@
 
 <footer class="mt-8 border-t">
 	<div class="flex py-2">
-		<a class="mr-4" href="/about">about</a>
-		<a class="mr-4" href="/archive">blog archive</a>
-		<a href="/contact">contact</a>
+		<a class="mr-4" href="/about/">about</a>
+		<a class="mr-4" href="/archive/">blog archive</a>
+		<a href="/contact/">contact</a>
 	</div>
 	<p class="text-gray-400">
 		Copyright &#169; {new Date().getFullYear()}, Dustin Mihalik

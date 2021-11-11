@@ -21,6 +21,7 @@ const config = {
 		target: '#svelte',
 		hydrate: false,
 		router: false,
+		trailingSlash: 'always',
 		adapter: adapter({
 			// default options are shown
 			pages: 'build',
