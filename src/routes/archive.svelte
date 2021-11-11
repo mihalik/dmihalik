@@ -32,7 +32,7 @@
 	<ul class="list-none">
 		{#each postList as { title, date, path }}
 			<li class="list-none">
-				<a class="text-blue-500 space-y-3" rel="prefetch" href={path}>
+				<a sveltekit:prefetch class="text-blue-500 space-y-3" href={path}>
 					<h3>
 						{title} ({date})
 					</h3>
