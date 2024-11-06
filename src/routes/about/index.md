@@ -1,17 +1,18 @@
 ---
 title: 'About Dustin'
-date: '2006-01-14'
+date: '2024-11-05'
 type: 'page'
 ---
 
-I am a software engineer at [Indeed](http://indeed.com) in Austin, TX. This blog is a place for me to write about whatever I feel like. This might include:
+I am a software engineer at [Indeed](http://indeed.com) in Austin, TX. I'm focused on AI Platforms.  Also see Github: [mihalik](https://github.com/mihalik)
 
-- .NET programming
-- Python/Django
-- Home theater equipment
-- Digital media
-- Video games
-- Board games
-- And other random crap
+- 💻 Programming
+- 🤖 AI/ML
+- 💡 New product discovery
+- 📚 Books
+- 🕹️ Video games
+- 🏊‍♂️ Swimming
+- 🌱 Gardening
+- 🍅 Tomatoes
 
-I don't generally talk about work on my blog, and the views expressed on this blog are my own and don't represent the views of my employer.
+The views expressed on this blog are my own and don't represent the views of my employer.
