@@ -1,0 +1,27 @@
+---
+title: 'D5 Streaming Media Network File Importer'
+date: '2004-04-05'
+---
+export const meta = [{title: frontmatter.title}];
+
+# {frontmatter.title}
+
+I found a GoVideo D2730 clearanced at Fry's this weekend. I had been looking at the Gateway Connected DVD player for a few weeks now but could not justify spending the money. The D2730 was half the price of the Gateway, and I found out it runs the same software. I could not resist.
+
+For those not familiar with the D2730 or Gateway Connected DVD, it's a DVD player that allows you to stream movies, MP3's, and photos from your computer. It supports direct decoding of MPEG and some MS file format, and it can transcode Divx files for playing on the DVD player. It has played almost all the files I've tried, and the quality is quite good.
+
+My one complaint with the software you install on your computer is that you can't index media on network drives. I keep most of my media on a central server and mount it as a local drive. You are supposed to install this software on all the machines on the network that might have media. In my case, that would be my computer, Jessie's computer, and the fileserver. Since the fileserver does not have a fast enough CPU to transcode Divx, that solution was not great...
+
+After playing around in the config files and registry, I found a way to make the application scan mounted network drives. It was a pain to maintain all the directories I needed, so I created a quick utility. I figured other people might be interested so I thought I'd release it.
+
+I give you the â€œStreaming Media Network File Importerâ€œ:
+
+![streaming_media_importer.PNG](/images/streaming_media_importer.PNG)
+
+Just put the exe anywhere, close down the D5 Server, and run the application. Once you run it, it should read your current config and list the directories you have configured. If it does not, select file->open to open your NetPlay.cfg file from your D5 directory. Add a few new folders and select file->save. You can now start the server again and hit the â€œScanâ€ button. Note: you will not see the new folders you added selected in the tree, but the software will still scan them and index any files it finds.
+
+Warnings: Be sure the backup your NetPlay.cfg file before running this program. It works just fine for me, but I can't make any guarantees. Also, I tested this with the 2.1.0.9 version of the software. It may or may not work with any other versions.
+
+You must have the most recent version of the .NET Framework (1.1) to run this application. You can install the .NET Framework from Windows Update.
+
+[networkmediaselector_081.zip](http://dmihalik.com/wp-content/uploads/2008/01/networkmediaselector_081.zip 'networkmediaselector_081.zip')
