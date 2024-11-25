@@ -24,7 +24,6 @@ export default function MyRoute({ loaderData }) {
         </li>
       ))}
       </ul>
-      <pre>{JSON.stringify(loaderData, null, 4)}</pre>
     </>
   );
 }
