@@ -11,6 +11,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="alternate" type="application/atom+xml" title="dmihalik.com - Dustin Mihalik" href="atom.xml" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
