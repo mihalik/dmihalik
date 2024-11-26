@@ -1,0 +1,90 @@
+---
+title: "React Router 7"
+date: "2024-12-26"
+---
+export const meta = [{title: frontmatter.title}];
+
+# {frontmatter.title}
+
+
+A couple years ago I moved this site off of Wordpress to static generation.  At the time I moved to a pre-release version of [SvelteKit](https://svelte.dev/docs/kit/introduction) for static generation.  There have been a number of changes since then and everything broke when I tried to deploy again thanks to me having dependencies on `@next`.  Rather than updating to the new SvelteKit, I decided to move to something I'm more familiar with.  Normally that would be Remix, but I decided to try out the new [React Router 7](https://reactrouter.com) which has a lot of overlap with Remix at this point.
+
+Overall the experience was great.  Vite made working with MDX pretty seamless.  And I was quite surprised that the static generation magically picked up all my pages.  There were a few small tricks I'm documenting for myself for the future.
+
+### Multiple flat routes
+
+I put my posts in a separate directory but want to use flat routing for my other pages too.  This took me a minute to figure out but it works great.  And there was some nice errors when two routes would conflict.
+
+```
+export default [
+    // Render /articles pages from /app/articles with the articles container
+    route("articles", "./articleRoot.tsx", [
+        ...(await flatRoutes({ rootDirectory: "./articles" }))
+    ]),
+    // Everything else from the /app/routes directory
+    ...(await flatRoutes()),
+] satisfies RouteConfig;
+```
+
+### List of posts
+
+The page that lists posts uses Vite's glob import to import all the mdx files which also includes frontmatter for the title and date.  Here's an example of how this looks.
+
+posts.ts
+```
+export function getPosts() {
+  const posts = import.meta.glob("./articles/*.mdx", { eager: true });
+  const postsArray = Object.entries(posts).map(([key, value]) => ({
+    ...value,
+    key,
+  }));
+  // Sort posts by date string in descending order (newest first)
+  postsArray.sort((a, b) => {
+    const dateA = a.frontmatter?.date || '';
+    const dateB = b.frontmatter?.date || '';
+    return dateB > dateA ? 1 : -1;
+  });
+  // Add href property by converting file path to URL path
+  postsArray.forEach(post => {
+    post.href = post.key
+      .replace('./articles/', '/articles/')
+      .replace('.mdx', '')
+      .replaceAll('.', '/')
+  });
+
+  return postsArray;
+}
+```
+
+archive.tsx
+```export async function loader() {
+  const posts = getPosts();
+
+  return { posts };
+}
+
+export default function MyRoute({ loaderData }) {
+  return (
+    <>
+      <h1>Archived posts</h1>
+
+      <ul className="list-none">
+      {loaderData.posts.map((post) => (
+        <li key={post.key}>
+          <Link to={post.href}>
+            {post.frontmatter.title}
+          </Link>
+          <span className="text-gray-500 ml-2">
+            {post.frontmatter.date}
+          </span>
+        </li>
+      ))}
+      </ul>
+    </>
+  );
+}
+```
+
+### Prerender
+
+I thought that I was going to have to use a prerender function to tell the react router build about all the posts but the combination of the above things seems to *magically* work with just `prerender: true` in the router config.  I've not dug into the build code to figure out why it works but I was pleasantly surprised.
