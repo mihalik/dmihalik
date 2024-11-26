@@ -4,8 +4,8 @@ date: "2024-12-26"
 ---
 export const meta = [{title: frontmatter.title}];
 
+**{frontmatter.date}**
 # {frontmatter.title}
-
 
 A couple years ago I moved this site off of Wordpress to static generation.  At the time I moved to a pre-release version of [SvelteKit](https://svelte.dev/docs/kit/introduction) for static generation.  There have been a number of changes since then and everything broke when I tried to deploy again thanks to me having dependencies on `@next`.  Rather than updating to the new SvelteKit, I decided to move to something I'm more familiar with.  Normally that would be Remix, but I decided to try out the new [React Router 7](https://reactrouter.com) which has a lot of overlap with Remix at this point.
 
